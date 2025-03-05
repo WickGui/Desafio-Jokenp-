@@ -30,7 +30,6 @@ const playCPU = () => {
 }
 
 const playGame = (human, cpu) => {
-    console.log('human:', human, 'cpu', cpu)
 
     if (human === cpu) {
         result.innerHTML = 'Draw!'
