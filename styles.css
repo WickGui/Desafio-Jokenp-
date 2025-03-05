@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: url("https://lh3.googleusercontent.com/-NMCdZ1WMkCM/TyXBqcfoCUI/AAAAAAAAAPs/BB-tb9OMpfw/s544/Untitled%25202.png");
+    background-size: 100vh 50vw;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;           
+}
+
+h1 {
+    background-color: rgba(223, 220, 233, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 20px;
+    font-size: 50px;   
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+#rock {
+    background-color: red;
+}
+
+#paper {
+    background-color: green;
+}
+
+#scissors {
+    background-color: blue;
+    width: 103.41px;
+}
+
+.choices {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.player-score {
+    font-size: 20px;
+    background-color: rgb(194, 171, 216);
+    width: 230px;
+    height: 43px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.cpu-score {
+    font-size: 20px;
+    background-color: rgb(194, 171, 216);
+    width: 230px;
+    height: 43px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 10px;        
+}
+
+.result {
+    font-size: 20px;
+    background-color: rgb(194, 171, 216);
+    width: 230px;
+    height: 43px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;    
+}
+
+.matches {
+    font-size: 20px;
+    background-color: rgb(194, 171, 216);
+    width: 230px;
+    height: 43px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-weight: bold;   
+}
+
+.player-score span {
+    margin-left: 10px;
+    color: rgb(47, 11, 255);
+}
+
+.cpu-score span {
+    margin-left: 10px;
+    color: rgb(226, 14, 14);        
+}
+
+.matches span {
+    margin-left: 10px;   
+}
+
+
+
