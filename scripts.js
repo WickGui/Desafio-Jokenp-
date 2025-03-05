@@ -8,6 +8,12 @@ let humanScoreNumber = 0
 let cpuScoreNumber = 0
 let matchesNumber = 0
 
+const GAME_OPTIONS = {
+    ROCK: 'rock',
+    PAPER: 'paper',
+    SCISSORS: 'scissors'
+}
+
 
 const playHuman = (Humanplay) => {
     playGame(Humanplay, playCPU())
@@ -17,7 +23,7 @@ const playHuman = (Humanplay) => {
 }
 
 const playCPU = () => {
-    const choices = ['rock', 'paper', 'scissors']
+    const choices = [GAME_OPTIONS.ROCK, GAME_OPTIONS.PAPER, GAME_OPTIONS.SCISSORS]
     const randomNumber = Math.floor(Math.random() * 3)
 
     return choices[randomNumber]
@@ -29,9 +35,9 @@ const playGame = (human, cpu) => {
     if (human === cpu) {
         result.innerHTML = 'Draw!'
     } else if (
-        human === 'paper' && cpu === 'rock' ||
-        human === 'rock' && cpu === 'scissors' ||
-        human === 'scissors' && cpu === 'paper') {
+        human === GAME_OPTIONS.PAPER && cpu === GAME_OPTIONS.ROCK ||
+        human === GAME_OPTIONS.ROCK && cpu === GAME_OPTIONS.SCISSORS ||
+        human === GAME_OPTIONS.SCISSORS && cpu === GAME_OPTIONS.PAPER) {
         
         humanScoreNumber++
         result.innerHTML = 'You win!'
